@@ -189,7 +189,7 @@ function downloadTasks() {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(tasks));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute('href', dataStr);
-    downloadAnchor.setAttribute('download', 'tasks.json');
+    downloadAnchor.setAttribute('download', 'tasks.txt');
     downloadAnchor.click();
 }
 
