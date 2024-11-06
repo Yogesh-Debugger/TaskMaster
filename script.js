@@ -193,7 +193,3 @@ function downloadTasks() {
     downloadAnchor.click();
 }
 
-// Logout Functionality
-function logout() {
-    window.location.href = 'login.html';
-}
