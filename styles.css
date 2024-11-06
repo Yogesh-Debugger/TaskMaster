@@ -84,14 +84,12 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    table-layout: fixed; /* Makes the table more predictable */
 }
 
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
-    word-wrap: break-word; /* Ensures content doesn't overflow */
 }
 
 th {
@@ -178,100 +176,4 @@ th {
    display: block;
    margin-top: 10px;
    text-align: center;
-}
-
-
-/* Media Queries for Responsiveness */
-
-/* For smaller screens (tablets and below) */
-@media screen and (max-width: 768px) {
-    /* Make the table more mobile-friendly */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    th, td {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    /* Stack the form inputs in a column */
-    .input-section input[type="text"],
-    .input-section input[type="date"],
-    .input-section select,
-    .input-section button {
-        width: 100%;
-    }
-
-    /* Stack the radio buttons vertically */
-    .input-section div {
-        display: block;
-    }
-
-    .input-section input[type="radio"] {
-        margin-right: 5px;
-    }
-
-    /* Make the download button smaller */
-    #downloadButton {
-        width: 100%;
-    }
-}
-
-/* For very small screens (mobile phones) */
-@media screen and (max-width: 480px) {
-    /* Reduce the padding for a more compact view */
-    th, td {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    /* Stack the table content in a more compact way */
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 20px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .input-section input[type="text"],
-    .input-section input[type="date"],
-    .input-section select,
-    .input-section button {
-        width: 100%;
-        padding: 8px;
-    }
-
-    .filter-section input {
-        width: 100%;
-    }
-
-    /* Stack the task table rows */
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
-
-    th {
-        display: none; /* Hide table headers for mobile */
-    }
-
-    td:before {
-        content: attr(data-label);
-        font-weight: bold;
-        display: inline-block;
-        width: 100%;
-    }
 }
