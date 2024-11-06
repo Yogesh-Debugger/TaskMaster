@@ -139,20 +139,6 @@ th {
     opacity: 1;
 }
 
-/* Logout Button */
-#logoutButton {
-    width: 100%;
-    padding: 10px;
-    background-color: #e67e22;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#logoutButton:hover {
-    background-color: #d35400;
-}
 
 /* Resources Section */
 .resources-section {
@@ -184,4 +170,10 @@ th {
 /* Add this style */
 #downloadButton {
     margin-top: 20px; /* Adjust the value as needed */
+}
+
+.link{
+   display: block;
+   margin-top: 10px;
+   text-align: center;
 }
